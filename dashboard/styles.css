@@ -1,0 +1,47 @@
+:root {
+  --bg: #0f172a;
+  --card: #1e293b;
+  --text: #e2e8f0;
+  --accent: #38bdf8;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  margin: 0;
+  padding: 0 1rem 2rem;
+}
+
+header {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  background: var(--card);
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
+}
+
+#health-status {
+  font-weight: bold;
+  color: var(--accent);
+}
+
+#audit-log {
+  list-style: none;
+  padding-left: 0;
+}
+
+#audit-log li {
+  margin-bottom: 0.4rem;
+  font-size: 0.9rem;
+}
