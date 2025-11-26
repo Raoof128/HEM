@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HEM Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Homomorphic Encryption Microservice Dashboard</h1>
+      <p>Monitoring simulated ciphertext operations and timings.</p>
+    </header>
+    <main>
+      <section class="card">
+        <h2>Service Health</h2>
+        <div id="health-status">Loading...</div>
+      </section>
+      <section class="card">
+        <h2>Operation Latency (ms)</h2>
+        <canvas id="latency-chart" height="160"></canvas>
+      </section>
+      <section class="card">
+        <h2>Ciphertext Size (bytes)</h2>
+        <canvas id="size-chart" height="160"></canvas>
+      </section>
+      <section class="card">
+        <h2>Recent Audit Events</h2>
+        <ul id="audit-log"></ul>
+      </section>
+    </main>
+    <script src="dashboard.js"></script>
+  </body>
+</html>
